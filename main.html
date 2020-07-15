@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<!-- first two scripts for smooth scrolling-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    } 
+		  });
+		});
+		</script>
+		<script type="text/javascript" src="./slideso.js"></script>
+		<script type="text/javascript" src="./hidenav.js"></script>
+		<script type="text/javascript" src="./navonscroll.js"></script>
+		<title>Hi!, I'm Utkarsh</title>
+		
+		<div id="navbar" class="pagination">
+			  <a href="#">&laquo;</a>
+			  <a class="middle active" href="#home">Home</a>
+			  <a class="middle" href="#about">About</a>
+			  <a class="middle" href="#resume">Resume</a>
+			  <a class="middle" href="#projects">Projects</a>
+			  <a class="middle" href="#connect">Connect</a>
+			  <a href="#">&raquo;</a>
+		</div>
+
+		<!-- Script for changing the active element when clicked the nav bar links -->
+		<script>
+		var header = document.getElementById("navbar");
+		var btns = header.getElementsByClassName("middle");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+		</script>
+
+		<!-- linking the css file -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- linking for social media icons -->		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- For slideshow -->
+	  	<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
+
+	</head>
+
+	<body>
+		<div id="the_code">
+		<div id="home">
+			<h1><b>U</b>nfold</h1><br>
+			<h2>I'm Utkarsh Mishra. A IIIT-H Undergrad-student,<br>Programmer and Web-Developer based in Hyderabad, India.</h2> 
+		</div>
+
+		<div id= "about">
+			<section id="timeline">
+			  	<div class="tl-item">
+				    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+				    <div class="tl-year">
+	      			<p class="f2 heading--sanSerif">2001</p>
+	    			</div>
+		    		<div class="tl-content">
+				      <h1>Je suis né!</h1>
+				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+				    </div>
+				</div>
+
+			   <div class="tl-item">
+				    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+				    <div class="tl-year">
+      				<p class="f2 heading--sanSerif">2013</p>
+   					</div>
+  					<div class="tl-content">
+				      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+				      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+				    </div>
+ 				</div>
+ 				
+ 				<div class="tl-item">
+    				<div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+				    <div class="tl-year">
+				      <p class="f2 heading--sanSerif">2014</p>
+				    </div>
+				    <div class="tl-content">
+				      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+				      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+				    </div>
+				</div>
+
+				 <div class="tl-item">
+				    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+				    <div class="tl-year">
+				      <p class="f2 heading--sanSerif">2016</p>
+				    </div>
+				    <div class="tl-content">
+				      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+				      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+				    </div>
+				</div>
+		
+				<div class="tl-item">
+    				<div class="tl-bg" style="background-image: url(https://placeimg.com/805/805/nature)"></div>
+				    <div class="tl-year">
+				      <p class="f2 heading--sanSerif">2018</p>
+				    </div>
+				    <div class="tl-content">
+				      <h1 class="f3 text--accent ttu">Inscrit au collège!</h1>
+				      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+				    </div>
+				</div>
+
+			</section>
+		</div>
+
+		<div id="resume">
+			<button class="btun" href="/download/project/5e99f18d0705310001ccd39d/build/173008f9f6d-e0199102737f45f9/output/output.pdf?compileGroup=standard&amp;clsiserverid=clsi-pre-emp-n1-b-fvxd&amp;popupDownload=true"><i class="fa fa-download"></i> Rèsumè</button>
+			<div id = "skills">
+				<h1>Skills</h1>
+					<img src="./C.png">
+					<img src="./C++.png">
+					<img src="./python.png">
+					<img src="./fpga.png"> <!--verilog-->
+					<img src="./xilinx.jpg">
+					<img src="./arduino.png">
+					<img src="./matlab.png">
+					<img src="./cadence.png">
+					<img src="./bash.png">
+					<img src="./javascript.png">
+					<img src="./html-css.png">
+					<img src="./vim.png">
+					<img src="./git.png">
+			</div>
+			<div class = "work_experience">
+				<h1>Work Experience</h1>
+				<div id = "work">
+					<h2>Computer Systems Group(CSG), IIIT- Hyderabad</h2>
+					<ul>
+						<li>Working as a research student with Professor Venkata Suresh Reddy Purini.</li>
+						<li>Aiming to design android app that outputs the number of rallies played in table-tennis by processing voise through Deep learning.</li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+
+		<div id="projects">
+		  <main class="main-content">
+		  <section class="slideshow">
+		    <div class="slideshow-inner">
+		      <div class="slides">
+		        <div class="slide is-active ">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">MIPS Processor</div>
+		              <div class="text">
+		                <p>Designed a 2-stage pipelined MIPS Processor and implemented processor in Verilog language, which takes machine codes as input in the instructions memory and outputs the corresponding results. Special Algorithms namely bubble sort and simple instructions were implemented.</p>
+		              </div> 
+		              <a href="#" class="btn">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">IoT-based Smart Parking System</div>
+		              <div class="text">
+		                <p>Implemented an IoT based project using Raspberry pi, which facilitates user online availability for slots. The components used are - raspberry pi, RF-ID reader, RF-ID cards, and IR sensors. User uses RF-ID cards to enter/exit this parking slot. Based on the time parked, the bill is sent to user through e-mail. The system is fully automatic and also features to register a new user.</p>
+		              </div> 
+		              <a href="https://www.instructables.com/id/IOT-Based-Smart-Parking/" class="btn" target="_blank">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container">
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Audio amplifier</div>
+		              <div class="text">
+		                <p>Audio amplifier which takes analog input through mic, gets processed through various stages namely - pre-amplifier , gain-stage, volume-bass-treble controller, filter and power amplifier, and outputs the signal via speaker.</p>
+		              </div> 
+		              <a href="#" class="btn">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container">
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">ASIC and FPGA Implementation of Reversible 16-bit ALU</div>
+		              <div class="text">
+		                <p>Designed and implemented Reversible 16bit ALU using reversible gates in verilog , ISE Xilinx and Cadence. This was much power and area efficient as compared to conventional ALU's.</p>
+		              </div> 
+		              <a href="#" class="btn">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/20mars17-sans-typo.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		       	<div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Dot-Jump Game</div>
+		              <div class="text">
+		                <p>Built a replica of Chrome dragon jump game in hardware using LEDs, without using any micro-controller. Obstacles were also generated randomly and score was tracked.</p>
+		              </div> 
+		              <a href="https://www.instructables.com/id/Dot-Jump-Game-without-Using-Arduino/" class="btn" target="_blank">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2019/06/L1001884-2.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">Linux shell in C</div>
+		              <div class="text">
+		                <p>Implemented Linux shell in C that supports piping and all basic Unix commands.</p>
+		              </div> 
+		              <a href="#" class="btn">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2019/06/L1001869-noircie.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		        <div class="slide">
+		          <div class="slide-content">
+		            <div class="caption">
+		              <div class="title">PyGame</div>
+		              <div class="text">
+		                <p>Designed game in Python using PyGame library. The game involves generation of random obstacles with increasing speed, avoiding which player needs to collect as many coins as possible. Game supports live display of score and playback sound effects & music.</p>
+		              </div> 
+		              <a href="#" class="btn">
+		                <span class="btn-inner">Learn More</span>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="image-container"> 
+		            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2019/07/Soldes-pour-diapo-site-2.jpg" alt="" class="image" />
+		          </div>
+		        </div>
+		      </div>
+		      <div class="pagination">
+		        <div class="item is-active"> 
+		          <span class="icon">1</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">2</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">3</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">4</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">5</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">6</span>
+		        </div>
+		        <div class="item">
+		          <span class="icon">7</span>
+		        </div>
+		      </div>
+		      <div class="arrows">
+		        <div class="arrow prev">
+		          <span class="svg svg-arrow-left">
+		            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+		            <span class="alt sr-only"></span>
+		          </span>
+		        </div>
+		        <div class="arrow next">
+		          <span class="svg svg-arrow-right">
+		            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+		            <span class="alt sr-only"></span>
+		          </span>
+		        </div>
+		      </div>
+		    </div> 
+		  </section>
+		</main>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+		<script  src="slideso.js"></script>
+		</div>
+
+		<div id="connect" class="connect_toolbar">
+			<div id="second_box">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeajc90hvHB5ig6u3moJr8iXvARMX2lT9vsZKVVth6y9_s8PQ/viewform?embedded=true" >	Loading…</iframe>
+			</div>
+			<div id="first_box">
+				<a href="https://www.facebook.com/v.utkarsh01/" target = "_blank" class="fa fa-facebook"></a>
+				<a href="mailto:v.utkarsh01@gmail.com" target = "_blank" class="fa fa-google-plus"></a><br>
+				<a href="https://www.linkedin.com/in/utkarsh-m-394060a7/" target = "_blank" class="fa fa-linkedin"></a>
+				<a href="https://www.instagram.com/v.utkarsh01/" target = "_blank" class="fa fa-instagram"></a>
+			</div>
+		</div>
+	</div>
+	</body>
+
+</html> 

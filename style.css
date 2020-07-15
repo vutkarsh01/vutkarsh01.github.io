@@ -1,0 +1,620 @@
+/*{
+	background-image: url('pulkit.jpg');
+	background-repeat: no-repeat;
+}
+*/
+
+/*a:hover{
+	background-color: yellow;
+	transition: 1s;
+}*/
+
+/* class middle is for an underline to appear from underline and spread */
+/*remark - smooth the abruptness after hover in dowaload icon, all social media icons, and download button.*/
+
+/*Underline hover effects for navigation bar elements*/
+a.middle
+{
+    position: relative;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a.active::before{
+  visibility: visible;
+  transform: scaleX(1);	
+}
+/*Navigation bar elements styling*/
+#navbar a{
+	text-decoration: none;
+	font: 300 20px "Oswald", sans-serif;
+	letter-spacing: 0.15em;
+	margin: auto 40px;
+	display: inline;
+	background-color: rgb(0,0,0);
+	color: rgb(255, 255 ,255);
+}
+
+/*Navigation bar styling*/
+#navbar {
+	background-color: rgb(0,0,0);
+	padding: 20px 20px;	
+	top : 0;
+	text-align: center;
+ 	width: 100%; 
+ 	position: fixed;
+  	transition: top 0.3s; 
+  	z-index: 1000;
+}
+
+/*id = #home styling*/
+#home {
+	text-align: center;
+}
+
+/* home text styling */
+#home h1{
+	font: 300 100px "Oswald", sans-serif;
+	letter-spacing: 0.3em;
+   	padding-top: 350px;
+}
+
+/* home text styling */
+#home h2{
+	 font: 25px "Open sans", sans-serif;
+	 letter-spacing: 0.05em;
+}
+
+/* home text styling */
+h1 b{
+	font-weight: bold;
+}
+/*--------------------------------------------------*/
+
+/* id= #about timeline styling */
+#timeline {
+	font: 16px "Open sans", sans-serif;
+	letter-spacing: 0.05em;
+	line-height: 1.75;
+}
+
+#timeline {
+	 display: flex;
+	 background-color: #031625;
+}
+ #timeline:hover .tl-item {
+	 /*width: 23.3333%;*/
+	 width:18%;
+}
+ .tl-item {
+	 transform: translate3d(0, 0, 0);
+	 position: relative;
+	 width: 20%;
+	 height: 100vh;
+	 min-height: 600px;
+	 color: #fff;
+	 overflow: hidden;
+	 transition: width 0.5s ease;
+}
+ .tl-item:before, .tl-item:after {
+	 transform: translate3d(0, 0, 0);
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+}
+ .tl-item:after {
+	 background: rgba(3, 22, 37, 0.85);
+	 opacity: 1;
+	 transition: opacity 0.5s ease;
+}
+ .tl-item:before {
+	 background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+	 z-index: 1;
+	 opacity: 0;
+	 transform: translate3d(0, 0, 0) translateY(50%);
+	 transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ .tl-item:hover {
+	 width: 28% !important;
+}
+ .tl-item:hover:after {
+	 opacity: 0;
+}
+ .tl-item:hover:before {
+	 opacity: 1;
+	 transform: translate3d(0, 0, 0) translateY(0);
+	 transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+ .tl-item:hover .tl-content {
+	 opacity: 1;
+	 transform: translateY(0);
+	 transition: all 0.75s ease 0.5s;
+}
+ .tl-item:hover .tl-bg {
+	 filter: grayscale(0);
+}
+ .tl-content {
+	 transform: translate3d(0, 0, 0) translateY(25px);
+	 position: relative;
+	 z-index: 1;
+	 text-align: center;
+	 margin: 0 1.618em;
+	 top: 55%;
+	 opacity: 0;
+}
+ .tl-content h1 {
+	 font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+	 text-transform: uppercase;
+	 color: #1779cf;
+	 font-size: 1.44rem;
+	 font-weight: normal;
+}
+ .tl-year {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translateX(-50%) translateY(-50%);
+	 z-index: 1;
+	 border-top: 1px solid #fff;
+	 border-bottom: 1px solid #fff;
+}
+ .tl-year p {
+	 font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+	 font-size: 1.728rem;
+	 line-height: 0;
+}
+ .tl-bg {
+	 transform: translate3d(0, 0, 0);
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 background-size: cover;
+	 background-position: center center;
+	 transition: filter 0.5s ease;
+	 filter: grayscale(100%);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/* id=#resume btn styling*/
+.btun {
+	font: 16px "Open sans", sans-serif;
+	letter-spacing: 0.05em;
+	line-height: 1.75;
+}
+.btun {
+  margin: 15px auto;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 700px;
+  padding: 6px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btun:hover {
+  background-color: white;
+  color: black;
+  opacity : 0.7;
+  transition: all 0.5s ease-in-out;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/* id = resume #skills styling */
+
+#resume{
+	text-align: center;
+}
+
+#skills {
+	margin-bottom: 10px;
+	padding: 2px 100px;
+	text-align: center;
+}
+
+#skills img{
+	height: 110px;
+	width: 110px;
+	margin: 30px;
+	position: relative;
+}
+
+#skills img:hover{
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	scale: 1.2;
+	transition: all 0.3s ease-in-out;
+}
+
+#skills h1{
+	font: 200 40px "Oswald", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+/*	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-size: 40px;*/
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*id =resume  work_experience  styling*/
+#work h2{
+	font: 300 30px "Oswald", sans-serif;
+	letter-spacing: 0.05em;
+   	text-align: center;
+   	padding-left: 10px;
+}
+
+#work li{
+	font: 20px "Open sans", sans-serif;/*
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-size: 15px;*/
+}
+
+#resume .work_experience h1{
+	font: 200 40px "Oswald", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+
+.work_experience {
+	text-align:center;
+}
+
+#work{
+	font: 40px "Open sans", sans-serif;
+	text-align: left;
+	width: 50%;
+	padding: 5px 5px;
+	background: rgba(0,0,0,0.5);
+	border: 3px solid rgb(0,0,0);
+	margin: 10px auto;
+	border-radius: 10px;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* id = #projects slideshow styling */
+.slideshow {
+	 font: 7px "Open sans", sans-serif;
+	 letter-spacing: 0.05em;
+
+}
+
+.btn {
+	 display: inline-block;
+	 padding: 13px 20px;
+	 color: #fff;
+	 text-decoration: none;
+	 position: relative;
+	 background: transparent;
+	 border: 1px solid #e1e1e1;
+	 font: 10px "Oswald", sans-serif;
+	 letter-spacing: 0.4em;
+	 text-align: center;
+	 text-indent: 2px;
+	 text-transform: uppercase;
+	 transition: color 0.1s linear 0.05s;
+}
+ .btn::before {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 top: 50%;
+	 left: 0;
+	 width: 100%;
+	 height: 1px;
+	 background: #e1e1e1;
+	 z-index: 1;
+	 opacity: 0;
+	 transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+ .btn::after {
+	 transition: border 0.1s linear 0.05s;
+}
+ .btn .btn-inner {
+	 position: relative;
+	 z-index: 2;
+}
+ .btn:hover {
+	 color: #373737;
+	 transition: color 0.1s linear 0s;
+}
+ .btn:hover::before {
+	 top: 0;
+	 height: 100%;
+	 opacity: 1;
+	 transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+ .btn:hover::after {
+	 border-color: #373737;
+	 transition: border 0.1s linear 0s;
+}
+ .slideshow {
+	 overflow: hidden;
+	 position: relative;
+	 width: 100%;
+	 height: 100vh;
+	 z-index: 1;
+}
+ .slideshow .slideshow-inner {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+}
+ .slideshow .slides {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 1;
+}
+ .slideshow .slide {
+	 display: none;
+	 overflow: hidden;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 1;
+	 opacity: 0;
+	 transition: opacity 0.3s ease;
+}
+ .slideshow .slide.is-active {
+	 display: block;
+}
+ .slideshow .slide.is-loaded {
+	 opacity: 1;
+}
+ .slideshow .slide .caption {
+	 padding: 0 100px;
+}
+ .slideshow .slide .image-container {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-position: center;
+	 z-index: 1;
+	 background-size: cover;
+	 image-rendering: optimizeQuality;
+}
+ .slideshow .slide .image-container::before {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background: rgba(0, 0, 0, 0.5);
+}
+ .slideshow .slide .image {
+	 width: 100%;
+	 width: 100%;
+	 object-fit: cover;
+	 height: 100%;
+}
+ .slideshow .slide-content {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 2;
+	 color: #fff;
+	 text-align: center;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .slideshow .slide .title {
+	 margin: 0 auto 15px;
+	 max-width: 1000px;
+	 font: 300 41.6666666667px "Oswald", sans-serif;
+	 letter-spacing: 0.35em;
+	 text-transform: uppercase;
+}
+ .slideshow .slide .text {
+	 margin: 0 auto;
+	 max-width: 1000px;
+	 font-size: 18px;
+	 line-height: 1.4;
+}
+ .slideshow .slide .btn {
+	 margin: 15px 0 0;
+	 border-color: #fff;
+}
+ .slideshow .slide .btn::before {
+	 background: #fff;
+}
+ .slideshow .pagination {
+	 position: absolute;
+	 bottom: 35px;
+	 left: 0;
+	 width: 100%;
+	 height: 12px;
+	 cursor: default;
+	 z-index: 2;
+	 text-align: center;
+}
+ .slideshow .pagination .item {
+	 display: inline-block;
+	 padding: 15px 5px;
+	 position: relative;
+	 width: 46px;
+	 height: 32px;
+	 cursor: pointer;
+	 text-indent: -999em;
+	 z-index: 1;
+}
+ .slideshow .pagination .item + .page {
+	 margin-left: -2px;
+}
+ .slideshow .pagination .item::before {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 top: 15px;
+	 left: 5px;
+	 width: 36px;
+	 height: 2px;
+	 background: rgba(255, 255, 255, 0.5);
+	 transition: background 0.2s ease;
+}
+ .slideshow .pagination .item::after {
+	 width: 0;
+	 background: #fff;
+	 z-index: 2;
+	 transition: width 0.2s ease;
+}
+ .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+	 background-color: #fff;
+}
+ .slideshow .arrows .arrow {
+	 margin: -33px 0 0;
+	 padding: 20px;
+	 position: absolute;
+	 top: 50%;
+	 cursor: pointer;
+	 z-index: 3;
+}
+ .slideshow .arrows .prev {
+	 left: 30px;
+}
+ .slideshow .arrows .prev:hover .svg {
+	 left: -10px;
+}
+ .slideshow .arrows .next {
+	 right: 30px;
+}
+ .slideshow .arrows .next:hover .svg {
+	 left: 10px;
+}
+ .slideshow .arrows .svg {
+	 position: relative;
+	 left: 0;
+	 width: 14px;
+	 height: 26px;
+	 fill: #fff;
+	 transition: left 0.2s ease;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/*id=#connect second_box */
+.connect_toolbar{
+	align-content: center;
+	margin-top: 20px;
+}
+
+.connect_toolbar #second_box iframe{
+	font:25px "Open sans", sans-serif;
+	width: 700px;
+	height: 750px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 5px solid rgb(0,0,5);
+	border-radius: 10px;
+	float : left;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:50%;
+}
+
+.fa-instagram{
+	color : blue;
+	/*background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);*/
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-linkedin{
+	color:#0e76a8;
+}
+
+.fa-google-plus{
+	color:#db4a39;
+}
+
+.fa-facebook:hover{
+  transform: scale(1.5);
+  background-color: #3b5998;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.fa-linkedin:hover{
+  transform: scale(1.5);
+  background-color: #0e76a8;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.fa-instagram:hover{
+  transform: scale(1.5);
+  background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.fa-google-plus:hover{
+  transform: scale(1.5);
+  background-image: linear-gradient(90deg, #d44638, #b23121);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+/*id =#connect first_box */
+.connect_toolbar #first_box{
+	height:750px;
+	width:700px;
+	margin: 10px;
+	text-align: center;
+	vertical-align: center;
+	background-color: white;
+	float : left;
+}
+
+.connect_toolbar #first_box a{
+	margin: 125px 100px;
+}
+
+.connect_toolbar a{
+	font-size:50px;
+	margin:120px 30px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+ 
