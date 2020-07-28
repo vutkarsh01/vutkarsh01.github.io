@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>	
-		<!-- first two scripts for smooth scrolling-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		  $("a").on('click', function(event) {
-		    if (this.hash !== "") {
-		      event.preventDefault();
-		      var hash = this.hash;
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 800, function(){
-		        window.location.hash = hash;
-		      });
-		    } 
-		  });
-		});
-		</script>
-		<script type="text/javascript" src="./slideso.js"></script>
-		<script type="text/javascript" src="./hidenav.js"></script>
-		<script type="text/javascript" src="./navonscroll.js"></script>
+		<!--Smooth scrolling-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			  $("a").on('click', function(event) {
+			    if (this.hash !== "") {
+			      event.preventDefault();
+			      var hash = this.hash;
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			        window.location.hash = hash;
+			      });
+			    } 
+			  });
+			});
+			</script>
+			<!----------------------------------------------------------------->
+			<!--Change Active class on scroll--->
+			<script>
+				$(window).scroll(function(){
+					var scrollDistance = $(window).scrollTop();
+					$('.page-section').each(function(i) {
+									if ($(this).position().top <= scrollDistance) {
+											$('.pagination a.active').removeClass('active');
+											$('.pagination a').eq(i).addClass('active'); }
+							});
+					}).scroll();
+			</script>
+			<!----------------------------------------------------------------->
+			<!-- Slideshow --><script type="text/javascript" src="./slideso.js"></script>		
+			<!-- Hidenav on scrolling up --><script type="text/javascript" src="./hidenav.js"></script>
+			<!-- Navigation appears on placing mouse--><script type="text/javascript" src="./navonscroll.js"></script>
+		
 		<title>Hi!, I'm Utkarsh</title>
 		
 		<div id="navbar" class="pagination">
