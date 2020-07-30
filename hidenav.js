@@ -1,13 +1,18 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-	setTimeout(function() {
-	document.getElementById("navbar").style.top = "-70px";}, 5000);
-  } else {
-    document.getElementById("navbar").style.top = "-70px";
-  }
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("navbar").style.top = "0";
+	  } else {
+	    document.getElementById("navbar").style.top = "-70px";
+	}
   prevScrollpos = currentScrollPos;
+}
+
+var Scrolldistance  = $(window).scrollTop||-1;
+if(Scrolldistance > 0 )
+{
+	setTimeout(function() {
+		document.getElementById("navbar").style.top = "-70px";}, 5000);
 }
 
