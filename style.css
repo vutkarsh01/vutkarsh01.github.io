@@ -13,6 +13,7 @@
 /*remark - smooth the abruptness after hover in dowaload icon, all social media icons, and download button.*/
 
 /*Underline hover effects for navigation bar elements*/
+
 a.middle
 {
     position: relative;
@@ -66,6 +67,13 @@ a.active::before{
 /*id = #home styling*/
 #home {
 	text-align: center;
+	color: white;
+	background-image: url("fsog.jpg");
+	height:100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-bottom: 1%; /*To avoid white gap that appears i don't know why*/ 
 }
 
 /* home text styling */
@@ -225,10 +233,16 @@ h1 b{
 
 #resume{
 	text-align: center;
+	background-image: url("macbook.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height:100%;
+	/*padding-bottom: 1%; To avoid white gap that appears i don't know why*/ 
 }
 
 #skills {
-	margin-bottom: 10px;
+
 	padding: 2px 100px;
 	text-align: center;
 }
@@ -242,7 +256,7 @@ h1 b{
 
 #skills img:hover{
 	border-radius: 5px;
-	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5);
 	scale: 1.2;
 	transition: all 0.3s ease-in-out;
 }
@@ -523,7 +537,16 @@ h1 b{
 }
 /*-------------------------------------------------------------------------------------------------*/
 /*id=#connect second_box */
+/*#connect{
+	padding : 100% 0%;
+}
+*/
 .connect_toolbar{
+	/*background-image: url("neurons.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height:100%;*/
 	align-content: center;
 	margin-top: 20px;
 }
@@ -532,10 +555,11 @@ h1 b{
 	font:25px "Open sans", sans-serif;
 	width: 700px;
 	height: 750px;
-	background: rgba(0, 0, 0, 0.5);
+	background-image: url("neurons.jpg");
+	/*background: rgba(0, 0, 0, 0.5);*/
 	border: 5px solid rgb(0,0,5);
 	border-radius: 10px;
-	float : left;
+	float : right;
 }
 
 .fa{
@@ -544,11 +568,16 @@ h1 b{
   width: 50px;
   text-align: center;
   text-decoration: none;
-  border-radius:50%;
+  /*border-radius:50%;*/
+  border-style: solid;
+  border-color: black;
+  border-radius: 25%;
+  border-width: 5px;
 }
 
 .fa-instagram{
-	color : blue;
+	color : #8a3ab9
+	/*color : linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);*/
 	/*background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);*/
 }
 
@@ -602,6 +631,7 @@ h1 b{
 	margin: 10px;
 	text-align: center;
 	vertical-align: center;
+	/*background-image: url("social.jpg");*/
 	background-color: white;
 	float : left;
 }
