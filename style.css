@@ -13,7 +13,13 @@
 /*remark - smooth the abruptness after hover in dowaload icon, all social media icons, and download button.*/
 
 /*Underline hover effects for navigation bar elements*/
-
+/*
+body {
+	overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+	position: relative; 
+}
+*/
 a.middle
 {
     position: relative;
@@ -66,14 +72,16 @@ a.active::before{
 
 /*id = #home styling*/
 #home {
+	/*scroll-snap-align: start;*/ 
+/*    scroll-snap-stop: normal; */
 	text-align: center;
 	color: white;
 	background-image: url("fsog.jpg");
-	height:100%;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	padding-bottom: 1%; /*To avoid white gap that appears i don't know why*/ 
+	/*padding-bottom: 1%; To avoid white gap that appears i don't know why */
 }
 
 /* home text styling */
@@ -96,6 +104,7 @@ h1 b{
 /*--------------------------------------------------*/
 
 /* id= #about timeline styling */
+
 #timeline {
 	font: 16px "Open sans", sans-serif;
 	letter-spacing: 0.05em;
@@ -211,12 +220,12 @@ h1 b{
 	line-height: 1.75;
 }
 .btun {
-  margin: 15px auto;
+  margin: 70px auto;
   background-color: black;
   border: none;
   color: white;
   width: 700px;
-  padding: 6px 30px;
+  padding: 10px 30px;
   cursor: pointer;
   font-size: 20px;
 }
@@ -237,7 +246,7 @@ h1 b{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height:100%;
+	height: 100vh;
 	/*padding-bottom: 1%; To avoid white gap that appears i don't know why*/ 
 }
 
@@ -306,6 +315,7 @@ h1 b{
 }
 /*----------------------------------------------------------------------------------------------*/
 /* id = #projects slideshow styling */
+
 .slideshow {
 	 font: 7px "Open sans", sans-serif;
 	 letter-spacing: 0.05em;
@@ -537,18 +547,19 @@ h1 b{
 }
 /*-------------------------------------------------------------------------------------------------*/
 /*id=#connect second_box */
-/*#connect{
-	padding : 100% 0%;
-}
-*/
+
 .connect_toolbar{
 	/*background-image: url("neurons.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height:100%;*/
+	height: 100vh;
 	align-content: center;
 	margin-top: 20px;
+	/*scroll-snap-align: start;*/ 
+/*    scroll-snap-stop: normal; */
+	
 }
 
 .connect_toolbar #second_box iframe{
