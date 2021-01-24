@@ -1,9 +1,13 @@
 	<!DOCTYPE html>
 	<html>
 		<head>	
-			<!-- Responsive -->
-			<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-			<!----------------------------------------->
+
+			<meta charset="UTF-8">
+
+			<!--Bootstrap CSS -->
+			<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+			<meta name="viewport" content="width=device-width,initia-scale=1.0">
 			<!--Smooth scrolling-->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script>
@@ -21,7 +25,7 @@
 			  });
 			});
 			</script>
-			<!----------------------------------------------------------------->
+
 			<!--Change Active class on scroll--->
 			<script>
 				$(window).scroll(function(){
@@ -33,103 +37,19 @@
 							});
 					}).scroll();
 			</script>
-			<!----------------------------------------------------------------->
-			<!-- Slideshow --><script type="text/javascript" src="./slideso.js"></script>		
-			<!-- Hidenav on scrolling up  <script type="text/javascript" src="./hidenav.js"></script> -->
-			<!-- Navigation appears on placing mouse --><!-- <script type="text/javascript" src="./navonscroll.js"></script> -->
-			
+
+			<!-- Slideshow -->
+			<script type="text/javascript" src="./slideso.js"></script>		
+
 			<title>Utkarsh Mishra</title>
 			<link rel="icon" href="./logo.png" type="image/png">
 			<div id="navbar" class="pagination">
-				  <!-- <a class="bhala left" href="">&laquo;</a> -->
 				  <a class="middle active" href="#home">Home</a>
 				  <a class="middle" href="#about">About</a>
 				  <a class="middle" href="#resume">Resume</a>
 				  <a class="middle" href="#projects">Projects</a>
 				  <a class="middle" href="#connect">Connect</a>
-				  <!-- <a class="bhala right" href="">&raquo;</a> -->
 			</div>
-			<!--Script for changing the active element when clicked the arrow in nav bar-->
-			<!-- Not working because of the a element is used inspite of something else for the arrows -->
-			<!-- <script>
-				var header = document.getElementById("navbar");
-				var btns = header.getElementsByClassName("middle");
-				var cntrl = header.getElementsByClassName("bhala");
-				cntrl[0].addEventListener("click", function(){
-					var current = document.getElementsByClassName("active");
-					var index;
-					for(var i=0;i<btns.length; i++){
-						if(btns[i].className==="middle active"){
-							index = i;
-							break;
-							}
-					}
-					if(index===0){
-						current[0].className = current[0].className.replace(" active","");
-						btns[btns.length-1].className += " active";
-						document.getElementsByClassName("bhala left").href ="#connect";
-						document.getElementById("connect").scrollIntoView();
-					}
-					else
-					{	
-						current[0].className = current[0].className.replace(" active","");
-						btns[index-1].className += " active";
-						if(index ===1){
-							document.getElementsByClassName("bhala left").href ="#home";
-							document.getElementById("home").scrollIntoView();
-						}
-						else if(index === 2){
-							document.getElementsByClassName("bhala left").href ="#about";
-							document.getElementById("about").scrollIntoView();
-						}
-						else if(index === 3){
-							document.getElementsByClassName("bhala left").href ="#resume";
-							document.getElementById("resume").scrollIntoView();
-						}
-						else if(index === 4){
-							document.getElementsByClassName("bhala left").href ="#projects";
-							document.getElementById("projects").scrollIntoView();
-						}
-					}
-				});
-				cntrl[1].addEventListener("click", function(){
-					var current = document.getElementsByClassName("active");
-					var index;
-					for(var i=0;i< btns.length; i++){
-						if(btns[i].className==="middle active"){
-							index = i;
-							break;
-						}
-					}
-					if(index===btns.length-1){
-						current[0].className = current[0].className.replace(" active","");
-						btns[0].className += " active";
-						document.getElementsByClassName("bhala right").href ="#home";
-						document.getElementById("home").scrollIntoView();
-					}
-					else
-					{	
-						current[0].className = current[0].className.replace(" active","");
-						btns[index+1].className += " active";
-						if(index ===  0){
-							document.getElementsByClassName("bhala right").href ="#about";
-							document.getElementById("about").scrollIntoView();
-						}
-						else if(index === 1){
-							document.getElementsByClassName("bhala right").href ="#resume";
-							document.getElementById("resume").scrollIntoView();
-						}
-						else if(index === 2){
-							document.getElementsByClassName("bhala right").href ="#projects";
-							document.getElementById("projects").scrollIntoView();
-						}
-						else if(index === 3){
-							document.getElementsByClassName("bhala right").href ="#connect";
-							document.getElementById("connect").scrollIntoView();
-						}
-					}
-				});
-			</script>		 -->
 
 			<!-- Script for changing the active element when clicked the nav bar links -->
 			<script>
@@ -154,6 +74,8 @@
 		  	<meta charset="UTF-8">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 			<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
+
+
 
 		</head>
 

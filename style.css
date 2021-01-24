@@ -1,14 +1,3 @@
-/*{
-	background-image: url('pulkit.jpg');
-	background-repeat: no-repeat;
-}
-*/
-
-/*a:hover{
-	background-color: yellow;
-	transition: 1s;
-}*/
-
 /* class middle is for an underline to appear from underline and spread */
 /*remark - smooth the abruptness after hover in dowaload icon, all social media icons, and download button.*/
 
@@ -81,14 +70,13 @@ a.active::before{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	/*padding-bottom: 1%; To avoid white gap that appears i don't know why */
 }
 
 /* home text styling */
 #home h1{
 	font: 300 100px "Oswald", sans-serif;
 	letter-spacing: 0.3em;
-   	padding-top: 350px;
+   	padding-top: 350px;					
 }
 
 /* home text styling */
@@ -224,7 +212,7 @@ h1 b{
   background-color: black;
   border: none;
   color: white;
-  width: 700px;
+  width: 100vh;
   padding: 10px 30px;
   cursor: pointer;
   font-size: 20px;
@@ -247,13 +235,12 @@ h1 b{
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100vh;
-	/*padding-bottom: 1%; To avoid white gap that appears i don't know why*/ 
 }
 
 #skills {
-
-	padding: 2px 100px;
-	text-align: center;
+	padding: 0px 0px;
+	align-items: center;
+	height: 90vh;
 }
 
 #skills img{
@@ -274,45 +261,8 @@ h1 b{
 	font: 200 40px "Oswald", sans-serif;
 	letter-spacing: 0.05em;
 	text-align: center;
-/*	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-size: 40px;*/
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/*id =resume  work_experience  styling*/
-#work h2{
-	font: 300 30px "Oswald", sans-serif;
-	letter-spacing: 0.05em;
-   	text-align: center;
-   	padding-left: 10px;
-}
-
-#work li{
-	font: 20px "Open sans", sans-serif;/*
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-size: 15px;*/
-}
-
-#resume .work_experience h1{
-	font: 200 40px "Oswald", sans-serif;
-	letter-spacing: 0.05em;
-	text-align: center;
-}
-
-.work_experience {
-	text-align:center;
-}
-
-#work{
-	font: 40px "Open sans", sans-serif;
-	text-align: left;
-	width: 50%;
-	padding: 5px 5px;
-	background: rgba(0,0,0,0.5);
-	border: 3px solid rgb(0,0,0);
-	margin: 10px auto;
-	border-radius: 10px;
-}
 /*----------------------------------------------------------------------------------------------*/
 /* id = #projects slideshow styling */
 
@@ -549,29 +499,27 @@ h1 b{
 /*id=#connect second_box */
 
 .connect_toolbar{
-	/*background-image: url("neurons.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height:100%;*/
 	height: 100vh;
 	align-content: center;
-	/*margin-top: 20px;*/
-	/*scroll-snap-align: start;*/ 
-/*    scroll-snap-stop: normal; */
-	
+	width: 100%;	
 }
 
+.connect_toolbar #second_box{
+	height:98vh;
+	width: 50%;
+	float: right;
+}
 .connect_toolbar #second_box iframe{
 	font:25px "Open sans", sans-serif;
-	width: 700px;
-	height: 750px;
+	width: 95%;
+	height: 98vh;
+	vertical-align: center;
 	background-image: url("neurons.jpg");
-	/*background: rgba(0, 0, 0, 0.5);*/
 	border: 5px solid rgb(0,0,5);
 	border-radius: 10px;
-	float : right;
+	/*float : right;*/
 	margin-top: 70px;
+	position: relative;
 }
 
 
@@ -581,7 +529,6 @@ h1 b{
   width: 50px;
   text-align: center;
   text-decoration: none;
-  /*border-radius:50%;*/
   border-style: solid;
   border-color: black;
   border-radius: 25%;
@@ -590,8 +537,6 @@ h1 b{
 
 .fa-instagram{
 	color : #8a3ab9
-	/*color : linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);*/
-	/*background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);*/
 }
 
 .fa-facebook{
@@ -637,14 +582,14 @@ h1 b{
   border-radius: 50%;
   transition: all 0.4s ease-out;
 }
+
 /*id =#connect first_box */
 .connect_toolbar #first_box{
-	/*margin-top: 70px;*/
-	height:750px;
-	width:700px;
-	margin: 70px 10px 10px 10px;
+	height: 100vh;
+	width: 50%;
 	text-align: center;
 	vertical-align: center;
+	margin-top: 70px;
 	/*background-image: url("social.jpg");*/
 	background-color: white;
 	float : left;
